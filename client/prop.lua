@@ -1,6 +1,5 @@
 -- client.lua
 
-ESX = exports.es_extended:getSharedObject()
 
 function SpawnPropAtCoords(model, x, y, z, w, rotate, rotateSpeed, rotateDistance)
     RequestModel(model)
