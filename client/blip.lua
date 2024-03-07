@@ -1,5 +1,3 @@
--- client.lua
-
 function CreateBlip(name, x, y, z, sprite, scale, color, display, shortRange)
     local blip = AddBlipForCoord(x, y, z)
     SetBlipSprite(blip, sprite)
