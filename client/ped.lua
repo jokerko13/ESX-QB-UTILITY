@@ -1,5 +1,3 @@
--- client.lua
-
 function CreateNPC(model, x, y, z, w, immortal, weapon, pedType, freeze, ambient, scenario)
     RequestModel(model)
 
