@@ -1,6 +1,3 @@
--- client.lua
-
-
 function SpawnPropAtCoords(model, x, y, z, w, rotate, rotateSpeed, rotateDistance)
     RequestModel(model)
 
