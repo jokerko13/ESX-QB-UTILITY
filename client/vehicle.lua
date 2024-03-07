@@ -1,6 +1,3 @@
-ESX = exports.es_extended:getSharedObject()
-
--- Funkce pro vytváření vozidel
 function CreateVehiclesF(model, x, y, z, w, plateText, dirtLevel, lights, locked, indicators, windows, rotate, rotateSpeed, rotateDistance, primaryColor, secondaryColor) 
     RequestModel(model)
 
@@ -50,7 +47,6 @@ function CreateVehiclesF(model, x, y, z, w, plateText, dirtLevel, lights, locked
         RollUpWindow(vehicle, 3)
     end
 
-    -- Otáčení vozidla
     if rotate then
         Citizen.CreateThread(function()
             while true do
@@ -72,7 +68,6 @@ function CreateVehiclesF(model, x, y, z, w, plateText, dirtLevel, lights, locked
     end
 end
 
--- Hlavní vlákno pro spawn vozidel
 Citizen.CreateThread(function()
     for _, vehicleData in ipairs(DRZ.Vehicle.Settings) do
         if vehicleData.spawnModel then
