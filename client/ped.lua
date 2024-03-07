@@ -1,7 +1,5 @@
 -- client.lua
 
-ESX = exports.es_extended:getSharedObject()
-
 function CreateNPC(model, x, y, z, w, immortal, weapon, pedType, freeze, ambient, scenario)
     RequestModel(model)
 
